@@ -7,15 +7,14 @@ project(customAl VERSION ${PROJECT_VESRION})
 
 #find_package(Boost COMPONENTS unit_test_framework REQUIRED)
 
-
 add_executable(customAl_pr main.cpp)
-#add_executable(sortipaddress sortipaddress.cpp)
+
 #add_executable(boost_test boost_test.cpp)
 
-#set_target_properties(customAl_pr boost_test sortipaddress PROPERTIES
-#    CXX_STANDARD 20
-#    CXX_STANDARD_REQUIRED ON
-#)
+SET (main.cpp custom_allocator.cpp custom_list.cpp factorial_fun.cpp PROPERTIES
+    CXX_STANDARD 17
+    CXX_STANDARD_REQUIRED ON
+)
 
 #set_target_properties(boost_test PROPERTIES
  #   COMPILE_DEFINITIONS BOOST_TEST_DYN_LINK
