@@ -7,7 +7,7 @@ project(customAl VERSION ${PROJECT_VESRION})
 
 #find_package(Boost COMPONENTS unit_test_framework REQUIRED)
 
-add_executable(customAl_pr main.cpp)
+add_executable(customAl main.cpp)
 
 #add_executable(boost_test boost_test.cpp)
 
@@ -21,7 +21,7 @@ SET (main.cpp custom_allocator.cpp custom_list.cpp factorial_fun.cpp PROPERTIES
   #  INCLUDE_DIRECTORIES ${Boost_INCLUDE_DIR}
 #)
 
-install(TARGETS customAl_pr RUNTIME DESTINATION bin)
+install(TARGETS customAl RUNTIME DESTINATION bin)
 
 set(CPACK_GENERATOR DEB)
 
