@@ -1,7 +1,8 @@
 cmake_minimum_required(VERSION 3.10)
+file:///home/user/TwoHomeWorkIP/CMakeLists.txt
 
-set(PATCH_VERSION "7")
-set(PROJECT_VESRION ${PROJECT_VESRION})
+set(PATCH_VERSION "8")
+set(PROJECT_VESRION 0.0.8)
 
 project(customAl VERSION ${PROJECT_VESRION})
 
